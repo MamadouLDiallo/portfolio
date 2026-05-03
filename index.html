@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Mamadou Lamarana Diallo, Data Analyst Junior specialise en analyse de donnees, modelisation et visualisation.">
+  <title>Mamadou Lamarana Diallo | Data Analyst Junior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" aria-label="Chargement du portfolio">
+    <div class="loader__mark">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="brand" href="#top" aria-label="Accueil">
+        <span class="brand__icon">MLD</span>
+        <span>Mamadou Lamarana Diallo</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">A propos</a>
+        <a href="#competences">Competences</a>
+        <a href="#services">Services</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Basculer le theme sombre">
+          <span class="theme-toggle__icon" aria-hidden="true">DM</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="accueil">
+      <div class="hero__content reveal">
+        <h1>Mamadou Lamarana Diallo</h1>
+        <p class="hero__title">Data Analyst Junior</p>
+        <p class="typing" aria-label="Je transforme les données en décisions claires grâce à l’analyse et aux tableaux de bord interactifs.">
+          <span id="typing-text"></span>
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#projets">Voir mes projets</a>
+          <a class="btn btn--ghost" href="#contact">Me contacter</a>
+        </div>
+        <div class="hero__metrics" aria-label="Indicateurs clés">
+          <div class="metric">
+            <strong>6+</strong>
+            <span>Projets data présentés</span>
+          </div>
+          <div class="metric">
+            <strong>4</strong>
+            <span>Outils clés maîtrisés</span>
+          </div>
+          <div class="metric">
+            <strong>100%</strong>
+            <span>Orienté impact business</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal" aria-label="Profil professionnel de Mamadou Lamarana Diallo">
+        <div class="profile-card">
+          <img src="img_mld.png" alt="Portrait de Mamadou Lamarana Diallo">
+          <div class="profile-card__data">
+            <span>Disponible</span>
+            <strong>Freelance - Stage - CDI - CDD</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="apropos">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A propos</p>
+        <h2>Une approche analytique tournée vers l’action</h2>
+      </div>
+      <div class="about__grid">
+        <article class="about__story reveal">
+          <p>
+            Je combine curiosité, rigueur et sens business pour transformer des données
+            complexes en insights clairs et directement exploitables.
+          </p>
+          <p>
+            Je suis Mamadou Lamarana Diallo, Data Analyst Junior, diplômé d’un Master
+            en Statistique et Informatique Décisionnelle. Mon approche repose sur
+            l’équilibre entre analyse statistique, compréhension des enjeux métiers et
+            restitution visuelle des résultats.
+          </p>
+          <p>
+            Je conçois des solutions d’analyse de bout en bout avec Excel, SQL, Python
+            et Power BI : collecte, nettoyage, exploration, modélisation et création de
+            tableaux de bord interactifs.
+          </p>
+          <p>
+            Mon objectif est d’évoluer vers une expertise avancée en data et en IA,
+            avec une ambition constante : transformer la donnée en décisions simples,
+            utiles et actionnables.
+          </p>
+        </article>
+        <div class="about__timeline reveal">
+          <div>
+            <span>Formation</span>
+            <strong>Master Statistique & Informatique Decisionnelle</strong>
+          </div>
+          <div>
+            <span>Specialite</span>
+            <strong>Analyse, modelisation, visualisation</strong>
+          </div>
+          <div>
+            <span>Objectif</span>
+            <strong>Expertise Data & Intelligence Artificielle</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="competences">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Competences</p>
+        <h2>Outils clés pour analyser, visualiser et expliquer la donnée</h2>
+      </div>
+      <div class="skills__grid">
+        <article class="skill-card reveal" style="--level: 88%">
+          <div class="skill-card__icon">XL</div>
+          <h3>Excel</h3>
+          <p>Analyse, nettoyage, tableaux croises dynamiques, dashboards et suivi KPI.</p>
+          <div class="progress"><span></span></div>
+        </article>
+        <article class="skill-card reveal" style="--level: 82%">
+          <div class="skill-card__icon">SQL</div>
+          <h3>SQL</h3>
+          <p>Requetes, jointures, aggregation, manipulation et exploration de bases.</p>
+          <div class="progress"><span></span></div>
+        </article>
+        <article class="skill-card reveal" style="--level: 86%">
+          <div class="skill-card__icon">Py</div>
+          <h3>Python</h3>
+          <p>Pandas, notebooks, statistiques, data mining et premiers modeles ML.</p>
+          <div class="progress"><span></span></div>
+        </article>
+        <article class="skill-card reveal" style="--level: 84%">
+          <div class="skill-card__icon">BI</div>
+          <h3>Power BI</h3>
+          <p>Visualisation, storytelling, rapports interactifs et lecture metier.</p>
+          <div class="progress"><span></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Services</p>
+        <h2>Des solutions data orientées clarté, performance et prise de décision</h2>
+      </div>
+      <div class="services__grid">
+        <article class="service-card reveal">
+          <div class="service-card__icon">01</div>
+          <h3>Nettoyage et préparation des données</h3>
+          <p>Structuration, traitement des valeurs manquantes et correction des jeux de données pour garantir des analyses fiables.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-card__icon">02</div>
+          <h3>Analyse de données</h3>
+          <p>Exploration des données, détection de tendances et extraction d’insights utiles pour la prise de décision.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-card__icon">03</div>
+          <h3>Création de dashboards</h3>
+          <p>Conception de tableaux de bord interactifs et visuels pour le suivi des indicateurs clés (KPIs).</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-card__icon">04</div>
+          <h3>Reporting business</h3>
+          <p>Synthèse claire et stratégique des résultats pour transformer les données en recommandations actionnables.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projets">
+      <div class="section-heading section-heading--split reveal">
+        <div>
+          <p class="eyebrow">Projets</p>
+          <h2>Projets data & Business Intelligence</h2>
+          <p class="section-intro">
+            Des réalisations concrètes en analyse de données, modélisation et visualisation,
+            pensées pour transformer les données en insights clairs et utiles à la décision.
+          </p>
+        </div>
+      </div>
+
+      <div class="filters reveal" aria-label="Filtrer les projets">
+        <button class="filter-btn is-active" type="button" data-filter="all">Tous</button>
+        <button class="filter-btn" type="button" data-filter="Python">Python</button>
+        <button class="filter-btn" type="button" data-filter="Jupyter Notebook">Notebook</button>
+        <button class="filter-btn" type="button" data-filter="BI">BI / Dashboard</button>
+      </div>
+
+      <div class="projects__status" id="projects-status"></div>
+      <div class="projects__grid" id="projects-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact__grid">
+        <aside class="contact-card reveal">
+          <p class="contact-pill">Contact</p>
+          <h2>Travaillons ensemble</h2>
+          <p>
+            Vous cherchez un profil analytique capable de rendre vos données plus
+            utiles, plus lisibles et plus actionnables ? Discutons de votre projet.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:mamadoulamaranadiallomld1@gmail.com">mamadoulamaranadiallomld1@gmail.com</a>
+            <a href="https://github.com/MamadouLDiallo" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/mamadou-lamarana-diallo-937430274/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </aside>
+        <form class="contact-form reveal">
+          <label>
+            Nom
+            <input type="text" name="name" placeholder="Votre nom" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="votre.email@example.com" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Votre besoin data, votre contexte, votre delai..." required></textarea>
+          </label>
+          <button class="btn btn--primary" type="submit">Envoyer le message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Mamadou Lamarana Diallo. Portfolio Data Analyst.</p>
+    <div>
+      <a href="https://github.com/MamadouLDiallo" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
