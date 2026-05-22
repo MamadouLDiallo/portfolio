@@ -4,15 +4,15 @@ const EXCLUDED_PROJECTS = new Set([
   "portfolio",
   "projet-modeles-lineaires-generalises",
   "projet_bio_stat",
-  "rapport-des-ventes-2022-2024"
+  "rapport-des-ventes-2022-2024",
+    "tableau-de-bord-des-performances-commerciales"
 ]);
 
 const PROJECT_DETAILS = {
   "analyse-des-performances-kin-marche-": {
     title: "Analyse des performances Kin Marché",
-    icon: "📊",
+    icon: "📈",
     visual: "bars",
-    metric: "+18% ventes",
     displayLanguage: "Power BI • BI",
     description: "Dashboard interactif conçu pour analyser les performances commerciales de Kin Marché à travers le suivi des ventes, des revenus et des indicateurs clés de performance.",
     problem: "Visibilité limitée sur les variations de ventes, les périodes fortes et les zones moins performantes.",
@@ -20,9 +20,21 @@ const PROJECT_DETAILS = {
     insights: "Identification des catégories les plus rentables, des périodes de forte activité et des zones commerciales sous-performantes.",
     impact: "Amélioration du suivi des KPIs et facilitation de la prise de décision stratégique."
   },
+  "rapport-financier-des-ventes": {
+    title: "Analyse financière des ventes",
+    icon: "💰",
+    visual: "finance",
+    metric: "Revenus suivis",
+    displayLanguage: "Power BI • BI",
+    description: "Dashboard financier développé pour suivre les revenus, analyser les performances de vente et faciliter le pilotage des indicateurs financiers.",
+    problem: "Manque de synthèse sur les revenus, les écarts financiers et les performances par période.",
+    tools: ["Power BI", "DAX"],
+    insights: "Analyse des revenus par période, suivi des performances produits et identification des écarts financiers.",
+    impact: "Vision synthétique des performances financières et amélioration du reporting stratégique."
+  },
   "dashbord_ventes": {
     title: "Dashboard d’analyse des ventes",
-    icon: "📈",
+    icon: "📊",
     visual: "trend",
     metric: "KPIs temps réel",
     displayLanguage: "Power BI • BI",
@@ -43,30 +55,6 @@ const PROJECT_DETAILS = {
     tools: ["Python", "Pandas", "Matplotlib", "Scikit-learn", "Plotly", "Streamlit"],
     insights: "Exploration des relations entre variables, préparation des données et identification de modèles prédictifs.",
     impact: "Amélioration de la compréhension des données et aide à l’analyse décisionnelle."
-  },
-  "rapport-financier-des-ventes": {
-    title: "Analyse financière des ventes",
-    icon: "💰",
-    visual: "finance",
-    metric: "Revenus suivis",
-    displayLanguage: "Power BI • BI",
-    description: "Dashboard financier développé pour suivre les revenus, analyser les performances de vente et faciliter le pilotage des indicateurs financiers.",
-    problem: "Manque de synthèse sur les revenus, les écarts financiers et les performances par période.",
-    tools: ["Power BI", "DAX"],
-    insights: "Analyse des revenus par période, suivi des performances produits et identification des écarts financiers.",
-    impact: "Vision synthétique des performances financières et amélioration du reporting stratégique."
-  },
-  "tableau-de-bord-des-performances-commerciales": {
-    title: "Analyse des performances commerciales",
-    icon: "📊",
-    visual: "scorecard",
-    metric: "Objectifs suivis",
-    displayLanguage: "Power BI • BI",
-    description: "Tableau de bord interactif conçu pour suivre les indicateurs commerciaux et analyser l’évolution des performances de vente.",
-    problem: "Suivi commercial peu lisible lorsque les objectifs, catégories et indicateurs ne sont pas regroupés.",
-    tools: ["Power BI", "DAX"],
-    insights: "Identification des meilleures performances commerciales et suivi des tendances de vente par catégorie.",
-    impact: "Optimisation du suivi des objectifs commerciaux et amélioration de la visibilité des données."
   },
   "projet-prevision-du-medicament": {
     title: "Prévision de la consommation de médicaments",
@@ -223,15 +211,8 @@ navLinks.forEach((link) => {
 const savedTheme = localStorage.getItem("portfolio-theme");
 if (savedTheme === "dark") {
   body.classList.add("dark");
-  themeIcon.textContent = "LM";
+  themeIcon.textContent = "☀️";
 }
-
-themeToggle.addEventListener("click", () => {
-  body.classList.toggle("dark");
-  const isDark = body.classList.contains("dark");
-  localStorage.setItem("portfolio-theme", isDark ? "dark" : "light");
-  themeIcon.textContent = isDark ? "LM" : "DM";
-});
 
 function startTypingLoop() {
   let index = 0;
