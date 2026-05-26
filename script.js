@@ -159,7 +159,7 @@ const projectsGrid = document.querySelector("#projects-grid");
 const projectsStatus = document.querySelector("#projects-status");
 const filterButtons = document.querySelectorAll(".filter-btn");
 const contactForm = document.querySelector(".contact-form");
-const headlineText = "Spécialisé en visualisation de données, analyse décisionnelle et conception de dashboards interactifs pour transformer les données en insights exploitables.";
+const headlineText = "Passionné par l’analyse de données et la Business Intelligence, je conçois des dashboards interactifs et des solutions analytiques permettant de transformer les données en insights stratégiques et exploitables.";
 const navLinks = document.querySelectorAll(".nav-panel a[href^='#']");
 
 body.classList.add("is-loading");
