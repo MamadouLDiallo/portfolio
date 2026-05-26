@@ -159,7 +159,7 @@ const projectsGrid = document.querySelector("#projects-grid");
 const projectsStatus = document.querySelector("#projects-status");
 const filterButtons = document.querySelectorAll(".filter-btn");
 const contactForm = document.querySelector(".contact-form");
-const headlineText = "Data Analyst spécialisé en Business Intelligence, visualisation de données et création de dashboards décisionnels";
+const headlineText = "Spécialisé en visualisation de données, analyse décisionnelle et conception de dashboards interactifs pour transformer les données en insights exploitables.";
 const navLinks = document.querySelectorAll(".nav-panel a[href^='#']");
 
 body.classList.add("is-loading");
